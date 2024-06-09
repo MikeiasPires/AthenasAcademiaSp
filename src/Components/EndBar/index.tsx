@@ -54,7 +54,7 @@ export default function Endbar() {
         </div>
       </EndressContent>
       <ContactText>
-        <h3>ENTRE EM CONTATO</h3>
+        <h3>ENTRE EM CONTAT</h3>
         <span> <BsTelephone size={20} style={{ color: 'red' }} />
           (11) 96581-1909</span>
         <span> <MdOutlineEmail size={20} style={{ color: 'red' }} />
