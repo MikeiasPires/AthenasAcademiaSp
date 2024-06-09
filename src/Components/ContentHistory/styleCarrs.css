@@ -1,0 +1,22 @@
+.Inner{
+    display: flex;
+}
+
+.item{
+    background-color: ;
+    min-width: 700px;
+    min-height: 200px;
+    padding: 10px;
+}
+.item img {
+    width: 100%;
+    max-width: 900px;
+    height: 90%;
+    border-radius: 12px;
+    pointer-events: none;
+}
+
+.Carrossel{
+    cursor: grab;
+    overflow: hidden;
+}
