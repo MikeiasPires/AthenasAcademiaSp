@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import ScrollReveal from 'scrollreveal';
 import { useEffect, useRef, useState } from 'react';
 import {
     ContainerHistory,
@@ -16,9 +16,20 @@ import './styleCarrs.css'
 
 export default function ContentHistory() {
 
+    const title = useRef(null)
+
     const photos = [image1,image2,image3,image4,image5,image6]
     const [width, setWidth] = useState(0)
     const  carros  = useRef()
+
+    useEffect(()=> {
+          ScrollReveal().reveal(title.current, {
+            duration: 1000,
+            delay: 200 
+          });
+      },[])
+    
+     
 
     useEffect(() => {
         console.log(carros.current?.scrollWidth,carros.current?.offsetWidth)
@@ -26,11 +37,12 @@ export default function ContentHistory() {
     },[])
 
 
+
     return (
         <ContainerHistory>
             <GroupContainer>
                 <TextTitle>
-                    <h1>NÃO SÓ UMA ACADEMIA </h1>
+                    <h1 ref={title}>NÃO SÓ UMA ACADEMIA </h1>
                     <BarDivision />
                     <span>Explore nossa academia especializada em Muay Thai,<br />
                         Boxe e Fight Circuit, onde oferecemos<br />
@@ -40,7 +52,7 @@ export default function ContentHistory() {
                         Comprometidos com a excelência,<br />
                         estamos aqui para impulsionar seus objetivos.</span>
                 </TextTitle>
-               
+                <img src={image3} width={580} height={360} alt="" />
             </GroupContainer>
         </ContainerHistory>
     );

@@ -54,6 +54,7 @@ button:hover{
 }
 span:hover{
     border-bottom: 1px solid red; 
+    color: #FE3030;
 }
 `;
 

@@ -15,6 +15,7 @@ export const Contentbuttons = styled.div`
  margin-left: 50px;
 
  button{
+    margin-left: 20px;
     border: none; 
     background-color: #FE3030;
     border-radius: 10px;
@@ -40,7 +41,7 @@ button{
 export const Textinfo = styled.div`
 margin-bottom: 80px;
 gap: 10px;
-margin-left: 20px;
+margin-right: 30px;
 display: flex;
 color: white;
 flex-direction: column;
@@ -56,7 +57,7 @@ gap: 10px;
 color: white;
 justify-content: center;
 text-align: center;
-margin-left: 50px;
+margin-right: 20px;
 margin-top: 40px;
 
 h3{
@@ -73,7 +74,7 @@ color: white;
 flex-direction: column;
 justify-content: center;
 text-align: center;
-margin-left: 40px;
+margin-left: 10px;
 margin-bottom: 75px;
 
 `;

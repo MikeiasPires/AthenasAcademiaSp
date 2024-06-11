@@ -5,6 +5,7 @@ import CoverTitle from "./Components/CoverHead"
 import ContentHistory from "./Components/ContentHistory"
 import Passbar from "./Components/Pass"
 import Endbar from "./Components/EndBar"
+import Mainpackage from "./Components/Main/Index"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <Headerbar/>
     <CoverTitle/>
     <ContentHistory/>
+    <Mainpackage/>
     <Passbar/>
     <Endbar/>
     <GlobalStyles/>

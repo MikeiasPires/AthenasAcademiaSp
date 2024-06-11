@@ -28,11 +28,13 @@ export const TitleMain = styled.div`
 `;
 
 export const StyleMainTitle = styled.h1`
+visibility: hidden;
  margin-top: 100px;
  font-size: 80px;
 `;
 
 export const StyleSecondTitle = styled.h1`
+visibility: hidden;
 margin-left: 30px;
  font-size: 50px;
 `;
