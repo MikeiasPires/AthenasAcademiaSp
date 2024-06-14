@@ -19,3 +19,21 @@ export const Contntinfo = styled.div`
  }
 `;
 
+export const Scroller = styled.div`
+max-width: 600px;
+outline: 3px solid lime;
+
+Scroller[data-animated=true]{
+   overflow: hidden;
+}
+`;
+
+
+
+
+export const Taglist = styled.div`
+padding-block: 1em;
+display: flex;
+gap: 1rem;
+`;
+

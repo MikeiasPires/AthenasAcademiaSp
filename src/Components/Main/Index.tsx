@@ -16,6 +16,10 @@ export default function Mainpackage() {
     <h3>ELEVE SEU TREINO</h3>
     <h4>ESCOLHA O QUE ENCAIXA COM VOCÊ</h4>
    </TitleInfo>
+   <Container>
+    <h2>Muay thai</h2>
+   <button>90R$</button>
+   </Container>
  </ContainerMain>
   );
 }
