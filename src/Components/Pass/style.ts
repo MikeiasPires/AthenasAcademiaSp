@@ -1,4 +1,5 @@
-import { styled } from 'styled-components';
+import { transform } from 'framer-motion';
+import { keyframes, styled } from 'styled-components';
 
 
 
@@ -19,13 +20,23 @@ export const Contntinfo = styled.div`
  }
 `;
 
+
+
 export const Scroller = styled.div`
 max-width: 600px;
-outline: 3px solid lime;
-
-Scroller[data-animated=true]{
-   overflow: hidden;
+display: inline-block;
+@keyframes slide {
+   from {
+      transform: translateX(0)
+   } to {
+      transform: translateX(-170%);
+   }
 }
+animation: 25s slide  infinite linear;
+:hover{
+   cursor: pointer;
+}
+
 `;
 
 
@@ -35,5 +46,9 @@ export const Taglist = styled.div`
 padding-block: 1em;
 display: flex;
 gap: 1rem;
+align-content: flex-end;
+white-space: nowrap;
+
+
 `;
 

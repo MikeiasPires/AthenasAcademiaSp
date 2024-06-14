@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import image6 from '../../../public/Cards/totalpass.png'
 import {
     Barpass,
     Contntinfo,
