@@ -41,7 +41,7 @@ button{
 export const Textinfo = styled.div`
 margin-bottom: 80px;
 gap: 10px;
-margin-right: 30px;
+margin-right: 20px;
 display: flex;
 color: white;
 flex-direction: column;
@@ -74,8 +74,8 @@ color: white;
 flex-direction: column;
 justify-content: center;
 text-align: center;
-margin-left: 10px;
-margin-bottom: 75px;
+margin-bottom: 55px;
+margin-right: 10px;
 
 `;
 

@@ -44,7 +44,7 @@ export default function ContentHistory() {
                 <TextTitle>
                     <h1 ref={title}>NÃO SÓ UMA ACADEMIA </h1>
                     <BarDivision />
-                    <span>Explore nossa academia especializada em Muay Thai,<br />
+                    <span>Explore nossa academia especializada em Muay Thai,
                         Boxe e Fight Circuit, onde oferecemos<br />
                         treinos desafiadores para todos os níveis.<br />
                         Garanta já sua matrícula<br />

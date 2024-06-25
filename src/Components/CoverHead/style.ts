@@ -24,6 +24,7 @@ export const TitleMain = styled.div`
     margin-top: 10px;
     color: #fff;
     font-size: 19px;
+    font-family: roboto;
  }
 `;
 

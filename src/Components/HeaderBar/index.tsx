@@ -8,7 +8,6 @@ import {
 } from './styled'
 
 
-
 export default function Headerbar() {
 
   function ClickEndress (){
@@ -29,7 +28,10 @@ export default function Headerbar() {
         </div>
         <TitleHeader>
             <span>Home</span>
-            <span>Planos</span>
+            <span onClick={
+              ()=> {
+              }
+            } >Planos</span>
             <span onClick={ClickEndress}>Unidade</span>
           <button onClick={Registrationclick}>MATRICULAS ABERTAS</button>
             </TitleHeader>

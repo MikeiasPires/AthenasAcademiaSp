@@ -42,6 +42,7 @@ display: flex;
  span{
     color: black;
     margin-top: 20px;
+    font-family: Roboto;
     font-size: 21px;
   }
 

@@ -25,17 +25,8 @@ export const Contntinfo = styled.div`
 export const Scroller = styled.div`
 max-width: 600px;
 display: inline-block;
-@keyframes slide {
-   from {
-      transform: translateX(0)
-   } to {
-      transform: translateX(-170%);
-   }
-}
-animation: 25s slide  infinite linear;
-:hover{
-   cursor: pointer;
-}
+
+
 
 `;
 
