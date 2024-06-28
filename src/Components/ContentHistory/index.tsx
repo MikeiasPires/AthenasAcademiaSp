@@ -1,4 +1,5 @@
 import ScrollReveal from 'scrollreveal';
+import {imagePost} from  '../../data/Datactphoto'
 import { useEffect, useRef, useState } from 'react';
 import {
     ContainerHistory,
@@ -6,21 +7,12 @@ import {
     BarDivision,
     GroupContainer
 } from './style';
-import image1 from '../../../public/Academiapost/photo2.jpg'
-import image2 from '../../../public/Academiapost/photo4.jpg'
-import image3 from '../../../public/Academiapost/photo3.jpg'
-import image4 from '../../../public/Academiapost/photo1.jpg'
-import image5 from '../../../public/Academiapost/photo5.jpg'
-import image6 from '../../../public/Academiapost/photo6.jpg'
+
 import './styleCarrs.css'
 
 export default function ContentHistory() {
 
     const title = useRef(null)
-
-    const photos = [image1,image2,image3,image4,image5,image6]
-    const [width, setWidth] = useState(0)
-    const  carros  = useRef()
 
     useEffect(()=> {
           ScrollReveal().reveal(title.current, {
@@ -29,14 +21,7 @@ export default function ContentHistory() {
           });
       },[])
     
-     
-
-    useEffect(() => {
-        console.log(carros.current?.scrollWidth,carros.current?.offsetWidth)
-        setWidth(carros.current?.scrollWidth - carros.current?.offsetWidth)
-    },[])
-
-
+ console.log(imagePost)     
 
     return (
         <ContainerHistory>
@@ -52,7 +37,11 @@ export default function ContentHistory() {
                         Comprometidos com a excelência,<br />
                         estamos aqui para impulsionar seus objetivos.</span>
                 </TextTitle>
-                <img src={image3} width={580} height={360} alt="" />
+                {imagePost.map((post) => {
+                    return <>
+                      <image src={}/>
+                    </>
+                })}
             </GroupContainer>
         </ContainerHistory>
     );

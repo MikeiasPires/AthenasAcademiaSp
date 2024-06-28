@@ -26,7 +26,7 @@ h1{
 export const BarDivision = styled.div`
  border-radius: 18PX;
  border-bottom: 2px solid black; 
- width: 120%; 
+ width: 70%; 
 
 
 `;
