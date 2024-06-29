@@ -8,6 +8,9 @@ background-image: url('../../public/atleta2.png');
 background-repeat: no-repeat;
 background-position: 65%;
 background-size: 650px;
+
+
+
 `;
 
 export const TitleMain = styled.div`
@@ -26,24 +29,47 @@ export const TitleMain = styled.div`
     font-size: 19px;
     font-family: roboto;
  }
+
+ @media (max-width: 450px) {
+span{
+    font-size: 14px;
+}
+  }
+
+ 
 `;
 
 export const StyleMainTitle = styled.h1`
-visibility: hidden;
- margin-top: 100px;
- font-size: 80px;
+  visibility: hidden;
+  margin-top: 100px;
+  font-size: 80px;
+
+  @media (max-width: 450px) {
+    margin-top: 220px;
+    font-size: 55px; 
+  }
 `;
 
 export const StyleSecondTitle = styled.h1`
 visibility: hidden;
 margin-left: 30px;
  font-size: 50px;
+
+ @media (max-width: 450px){
+    font-size: 40px;
+ }
 `;
 
 export const ButtonStyle = styled.div`
 display: flex;
 justify-content: flex-end;
 margin-right: 180px;
+
+@media (max-width: 450px){
+margin-right: 110px;
+margin-top:20px
+
+}
 
 button{
     border: 1px solid #FE3030;
