@@ -1,4 +1,3 @@
-import React from 'react';
 import Ctlogo from '../../../public/Ct.svg'
 import {
   GroupComponents,
