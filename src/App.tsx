@@ -2,7 +2,7 @@ import React from "react"
 import GlobalStyles from "./createGlobalStyle"
 import Headerbar from "./Components/HeaderBar"
 import CoverTitle from "./Components/CoverHead"
-import ContentHistory from "./Components/ContentHistory"
+import ContentHistory from './Components/ContentHistory/ContentHistory'
 import Passbar from "./Components/Pass"
 import Endbar from "./Components/EndBar"
 import Mainpackage from "./Components/Main/Index"
