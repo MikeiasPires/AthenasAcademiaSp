@@ -51,7 +51,11 @@ border-radius: 8px;
 
 `;
 
-export const Imageproduct = styled.div`
+interface ImageproductProps {
+    productsImage: string; // 
+  }
+
+export const Imageproduct = styled.div<ImageproductProps>`
 border-radius: 8px;
 display: flex;
 width: 270px;

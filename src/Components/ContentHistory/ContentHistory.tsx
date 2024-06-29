@@ -22,7 +22,6 @@ export default function ContentHistory() {
         }
     }, []);
 
-    console.log(imagePost);
 
     return (
         <ContainerHistory>

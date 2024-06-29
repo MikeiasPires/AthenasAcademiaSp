@@ -31,9 +31,9 @@ export default function Passbar() {
         <h3>ACEITAMOS TAMBÉM</h3>
         <Scroller className='selectscroller'>
           <Taglist>
-          {cards.map((img) => {
+          {cards.map((img,index)  => {
             return <>
-            <img key={img.id} src={img.img} width={200} height={50} alt="vr" />
+            <img  key={index} src={img.img} width={200} height={50} alt="vr" />
             </>
           })}
         </Taglist>
