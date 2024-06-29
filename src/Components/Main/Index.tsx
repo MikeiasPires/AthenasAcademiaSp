@@ -24,7 +24,7 @@ const productRef = useRef<HTMLDivElement | null >(null)
       <AlignContainer>
       {products.map((prod) => {
         return (
-        <ContainerProducts  ref={productRef}>
+        <ContainerProducts key={prod.id} ref={productRef}>
           <div>
         <Imageproduct productsImage={prod.images}>
           <span>{prod.title}</span>

@@ -33,7 +33,7 @@ export default function Passbar() {
           <Taglist>
           {cards.map((img) => {
             return <>
-            <img src={img.img} key={img.id} width={200} height={50} alt="vr" />
+            <img  src={img.img} width={200} height={50} alt="vr" />
             </>
           })}
         </Taglist>

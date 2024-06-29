@@ -38,8 +38,8 @@ export default function ContentHistory() {
                         estamos aqui para impulsionar seus objetivos.</span>
                 </TextTitle>
                 {imagePost.map((post) => {
-                    return <>
-                    </>;
+                    return <div key={post.id}>
+                    </div>;
                 })}
             </GroupContainer>
         </ContainerHistory>
