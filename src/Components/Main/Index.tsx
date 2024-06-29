@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { products } from '../../data/Dataimagens';
 import {
   ContainerMain,
@@ -9,7 +9,6 @@ import {
   VallueProducts,
   TitleProduct
 } from './style';
-import { FaLeaf } from 'react-icons/fa';
 
 export default function Mainpackage() {
 

@@ -1,4 +1,4 @@
-import React from "react"
+
 import GlobalStyles from "./createGlobalStyle"
 import Headerbar from "./Components/HeaderBar"
 import CoverTitle from "./Components/CoverHead"

@@ -17,23 +17,23 @@ export const imagePost: post[] = [
     },
     {
         id:2,
-        image: image1
+        image: image2
     },
     {
         id:3,
-        image: image1
+        image: image3
     },
     {
         id:4,
-        image: image1
+        image: image4
     },
     {
         id:5,
-        image: image1
+        image: image5
     },
     {
         id:6,
-        image: image1
+        image: image6
     },
 
 ]
