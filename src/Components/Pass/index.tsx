@@ -18,12 +18,12 @@ export default function Passbar() {
     addAnimation();
   }
 
-  function addAnimation (){
-    scrollers.forEach((scroll)=> {
-      scroll.setAttribute('data-animated', true)
-    })
+  function addAnimation() {
+    scrollers.forEach((scroll) => {
+      return scroll.setAttribute('data-animated', 'true');
+    });
   }
-
+  
 
   return (
  <Barpass>
@@ -33,7 +33,7 @@ export default function Passbar() {
           <Taglist>
           {cards.map((img) => {
             return <>
-            <img  src={img.img} width={200} height={50} alt="vr" />
+            <img key={img.id} src={img.img} width={200} height={50} alt="vr" />
             </>
           })}
         </Taglist>

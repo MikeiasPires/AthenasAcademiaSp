@@ -16,16 +16,25 @@ export default function CoverTitle() {
   const elemntsubspan = useRef(null)
 
 
-  useEffect(()=> {
-    ScrollReveal().reveal(elementtitle.current, {
-        duration: 1000, 
-        delay: 200
-      });
-      ScrollReveal().reveal(elementsubtitle.current, {
+  useEffect(() => {
+    const sr = ScrollReveal();
+
+    if (elementtitle.current) {
+      sr.reveal(elementtitle.current, {
         duration: 1000,
-        delay: 200 
+        delay: 200,
       });
-      ScrollReveal().reveal(elemntspan.current, {
+    }
+
+    if (elementsubtitle.current) {
+      sr.reveal(elementsubtitle.current, {
+        duration: 1000,
+        delay: 200,
+      });
+    }
+
+    if (elemntspan.current) {
+      sr.reveal(elemntspan.current, {
         duration: 2000,
         delay: 200,
         distance: '30px',
@@ -33,7 +42,10 @@ export default function CoverTitle() {
         opacity: 0,
         easing: 'ease',
       });
-      ScrollReveal().reveal(elemntsubspan.current, {
+    }
+
+    if (elemntsubspan.current) {
+      sr.reveal(elemntsubspan.current, {
         duration: 2000,
         delay: 200,
         distance: '30px',
@@ -41,7 +53,13 @@ export default function CoverTitle() {
         opacity: 0,
         easing: 'ease',
       });
-  },[])
+    }
+
+    
+    return () => {
+      sr.destroy();
+    };
+  }, []); 
 
  
   function Registrationclick(){
@@ -62,7 +80,7 @@ export default function CoverTitle() {
                 <ButtonStyle>
                     <button onClick={Registrationclick}>
                         Participe já
-                    </button>
+                      </button>
                 </ButtonStyle>
                 </TitleMain>
             </ContainerWallpaper>

@@ -14,10 +14,12 @@ export default function ContentHistory() {
     const title = useRef(null);
 
     useEffect(() => {
-        ScrollReveal().reveal(title.current, {
-            duration: 1000,
-            delay: 200
-        });
+        if(title.current){
+            ScrollReveal().reveal(title.current, {
+                duration: 1000,
+                delay: 200
+            });
+        }
     }, []);
 
     console.log(imagePost);
