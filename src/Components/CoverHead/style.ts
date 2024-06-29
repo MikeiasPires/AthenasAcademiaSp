@@ -1,10 +1,11 @@
 import { styled } from 'styled-components';
+import Atleta from '../../../public/atleta2.png'
 
 export const ContainerWallpaper = styled.div`
  max-width: 100vw;
 height: 500px;
 background-color: black;
-background-image: url('../../public/atleta2.png');
+background-image: url(${Atleta});
 background-repeat: no-repeat;
 background-position: 65%;
 background-size: 650px;
