@@ -10,6 +10,10 @@ background-repeat: no-repeat;
 background-position: 65%;
 background-size: 650px;
 
+@media (max-width: 450px){
+  max-width: 450px;
+}
+
 
 
 `;
@@ -33,7 +37,9 @@ export const TitleMain = styled.div`
 
  @media (max-width: 450px) {
 span{
-    font-size: 14px;
+  text-align: center;
+  margin-right: 40px;
+    font-size: 15px;
 }
   }
 
@@ -67,9 +73,8 @@ justify-content: flex-end;
 margin-right: 180px;
 
 @media (max-width: 450px){
-margin-right: 110px;
-margin-top:20px
-
+margin-right: 85px;
+margin-top:10px;
 }
 
 button{

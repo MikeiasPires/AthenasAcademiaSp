@@ -16,6 +16,10 @@ export const ContainerMain = styled.div`
  height: 610px;
 background-color: #7F1818;
  
+@media(max-width: 450px){
+    max-width: 450px;
+    height: 2050px;
+}
 
 `;
 
@@ -47,7 +51,7 @@ width: 270px;
 height: 450px;
 background-color: white;
 border-radius: 8px;
- 
+
 
 `;
 
@@ -76,6 +80,12 @@ span{
 
 export const AlignContainer = styled.div`
 display: flex;
+
+@media(max-width: 450px){
+    display: flex;
+    margin-left: 35px;
+    flex-direction: column;
+}
 `;
 
 export const TitleProduct = styled.div`

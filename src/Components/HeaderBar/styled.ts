@@ -17,6 +17,11 @@ export const ContainerBar = styled.div`
  height: 150px;
  padding: 05px;
  background-color: black ;
+
+@media (max-width: 450px){
+    max-width: 450px;
+
+}
 `;
 
 export const TitleHeader = styled.div`

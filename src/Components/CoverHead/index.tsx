@@ -75,8 +75,7 @@ export default function CoverTitle() {
                 <TitleMain>
                 <StyleMainTitle ref={elementtitle} >ACADEMIA</StyleMainTitle>
                 <StyleSecondTitle ref={elementsubtitle}>ATHENAS</StyleSecondTitle>
-                <span ref={elemntspan}>"MAIS QUE UMA ARTE MARCIAL, UM ESTILO DE VIDA.</span>
-                <span ref={elemntsubspan}>DESAFIE SEUS LIMITES, LIBERE SUA FORÇA."</span>
+                <span ref={elemntspan}>"MAIS QUE UMA ARTE MARCIAL, UM ESTILO DE VIDA. DESAFIE SEUS LIMITES, LIBERE SUA FORÇA."</span>
                 <ButtonStyle>
                     <button onClick={Registrationclick}>
                         Participe já

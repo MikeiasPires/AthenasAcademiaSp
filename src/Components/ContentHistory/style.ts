@@ -4,6 +4,12 @@ import { styled } from 'styled-components';
 export const ContainerHistory = styled.div`
  max-width: 100vw;
  height: 500px;
+
+ @media(max-width: 450px){
+  max-width: 450px;
+  height: 560px;
+
+ }
  
 
 `;
@@ -20,7 +26,9 @@ h1{
     color: black;
 }
 
-
+@media(max-width: 450px){
+  margin-top: 10px;
+ }
 `;
 
 export const BarDivision = styled.div`

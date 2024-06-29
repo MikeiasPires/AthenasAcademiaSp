@@ -8,11 +8,22 @@ export const Contentendbar = styled.div`
  background-color: black;
  display: flex;
  
+ 
+ @media (max-width: 450px){
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    height: 850px;
+
+ }
 `;
 
 export const Contentbuttons = styled.div`
  margin-top: 30px;
  margin-left: 50px;
+@media (max-width: 450px) {
+ margin-left: 135px;
+}
 
  button{
     margin-left: 20px;
