@@ -9,7 +9,7 @@ import {
 
 export default function Headerbar() {
     
-  const Scroll = (Test) => {
+  const Scroll = () => {
     const selectid = document.getElementById('Test')
     if(selectid){
       window.scrollTo({
