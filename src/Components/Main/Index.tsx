@@ -17,13 +17,13 @@ const productRef = useRef<HTMLDivElement | null >(null)
   return (
     <ContainerMain>
       <TitleInfo>
-        <h3>ELEVE SEU TREINO</h3>
+        <h3 id='Test' ref={productRef}>ELEVE SEU TREINO</h3>
         <h4>ESCOLHA O QUE ENCAIXA COM VOCÊ</h4>
       </TitleInfo>
       <AlignContainer>
       {products.map((prod) => {
         return (
-        <ContainerProducts key={prod.id} ref={productRef}>
+        <ContainerProducts key={prod.id} >
           <div>
         <Imageproduct productsImage={prod.images}>
           <span>{prod.title}</span>

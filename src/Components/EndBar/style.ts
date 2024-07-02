@@ -13,7 +13,7 @@ export const Contentendbar = styled.div`
     max-width: 450px;
     display: flex;
     flex-direction: column;
-    height: 850px;
+    height: 1000px;
 
  }
 `;
@@ -22,7 +22,7 @@ export const Contentbuttons = styled.div`
  margin-top: 30px;
  margin-left: 50px;
 @media (max-width: 450px) {
- margin-left: 135px;
+ margin-left: 110px;
 }
 
  button{
@@ -59,6 +59,11 @@ flex-direction: column;
 justify-content: center;
 text-align: center;
 
+@media(max-width:450px){
+    margin-bottom: 20px;
+    margin-right: 0;
+
+}
 `;
 
 export const EndressContent = styled.div`
@@ -71,8 +76,17 @@ text-align: center;
 margin-right: 20px;
 margin-top: 40px;
 
+@media (max-width: 450px){
+margin-top: 0px;
+display: flex;
+flex-direction: column;
+margin-top: 5px;
+margin-left: 22px;
+
+}
+
 h3{
-    margin-top: 05px;
+    margin-top: 5px;
 
 }
 
@@ -88,6 +102,29 @@ text-align: center;
 margin-bottom: 55px;
 margin-right: 10px;
 
+
+
 `;
 
 
+export const DivisionBar = styled.div`
+
+border-left: 1px solid white ;
+width: 10px; 
+border-width: 2px;
+height: 150px;
+margin-top: 50px;
+
+ @media (max-width: 450px){
+height: 50px;
+margin-top: 0px;
+border-left: 0;
+border-width: 0;
+width: 0;
+border-bottom: 3px solid #FFFF; 
+width: 70%;
+margin-left: 60px;
+margin-bottom: 20px;
+
+}
+`;

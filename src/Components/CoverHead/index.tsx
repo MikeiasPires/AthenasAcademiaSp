@@ -63,7 +63,7 @@ export default function CoverTitle() {
 
  
   function Registrationclick(){
-    const linkregister = 'https://api.whatsapp.com/message/JJSARAA2643YE1?autoload=1&app_absent=0'
+    const linkregister = 'https://wa.me/message/JJSARAA2643YE1'
      window.location.href = linkregister
    }
  
@@ -75,7 +75,7 @@ export default function CoverTitle() {
                 <TitleMain>
                 <StyleMainTitle ref={elementtitle} >ACADEMIA</StyleMainTitle>
                 <StyleSecondTitle ref={elementsubtitle}>ATHENAS</StyleSecondTitle>
-                <span ref={elemntspan}>"MAIS QUE UMA ARTE MARCIAL, UM ESTILO DE VIDA. DESAFIE SEUS LIMITES, LIBERE SUA FORÇA."</span>
+                <span ref={elemntspan}>"MAIS QUE UMA ARTE MARCIAL, UM ESTILO DE VIDA. <br/> DESAFIE SEUS LIMITES, LIBERE SUA FORÇA."</span>
                 <ButtonStyle>
                     <button onClick={Registrationclick}>
                         Participe já

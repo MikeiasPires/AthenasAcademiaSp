@@ -8,6 +8,17 @@ import {
 
 
 export default function Headerbar() {
+    
+  const Scroll = (Test) => {
+    const selectid = document.getElementById('Test')
+    if(selectid){
+      window.scrollTo({
+        behavior:'smooth',
+        top:selectid.offsetTop -  20,
+      })
+    } 
+  }
+
 
   function ClickEndress (){
     const location = 'https://www.google.com/maps?ll=-23.558353,-46.801738&z=15&t=m&hl=pt-BR&gl=BR&mapclient=embed&q=Av.+Santiago+Rodilha,+199+-+Veloso+Osasco+-+SP+06154-000'
@@ -15,7 +26,7 @@ export default function Headerbar() {
   }
 
   function Registrationclick(){
-   const linkregister = 'https://api.whatsapp.com/message/JJSARAA2643YE1?autoload=1&app_absent=0'
+   const linkregister = 'https://wa.me/message/JJSARAA2643YE1'
     window.location.href = linkregister
   }
 
@@ -27,10 +38,7 @@ export default function Headerbar() {
         </div>
         <TitleHeader>
             <span>Home</span>
-            <span onClick={
-              ()=> {
-              }
-            } >Planos</span>
+            <span onClick={Scroll}>Planos</span>
             <span onClick={ClickEndress}>Unidade</span>
           <button onClick={Registrationclick}>MATRICULAS ABERTAS</button>
             </TitleHeader>
