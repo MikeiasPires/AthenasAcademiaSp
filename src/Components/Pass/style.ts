@@ -6,6 +6,10 @@ export const Barpass = styled.div`
  max-width: 100vw;
  height: 120px;
  background-color: #ffff;
+
+ @media(max-width: 450px){
+   max-width: 450px;
+ }
 `;
 
 export const Contntinfo = styled.div`
@@ -33,12 +37,13 @@ display: inline-block;
 
 
 export const Taglist = styled.div`
-padding-block: 1em;
+max-width: 100vw;
 display: flex;
 gap: 1rem;
-align-content: flex-end;
-white-space: nowrap;
 
+@media(max-width: 450px){
+   
+}
 
 `;
 

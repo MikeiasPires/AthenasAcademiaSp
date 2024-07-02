@@ -68,7 +68,7 @@ background-image: url(${props => props.productsImage});
 background-repeat: no-repeat;
 background-size: cover;
 span{
-    margin-left: 53%;
+    margin-left: 45%;
     margin-top: 63%;
     color: #ffff;
     font-family: roboto;

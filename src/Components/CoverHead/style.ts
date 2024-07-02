@@ -39,7 +39,7 @@ export const TitleMain = styled.div`
 span{
   text-align: center;
   margin-right: 40px;
-    font-size: 15px;
+  font-size: 15px;
 }
   }
 
@@ -53,7 +53,7 @@ export const StyleMainTitle = styled.h1`
 
   @media (max-width: 450px) {
     margin-top: 220px;
-    font-size: 55px; 
+    font-size: 55px;
   }
 `;
 

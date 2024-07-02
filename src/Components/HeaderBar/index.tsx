@@ -19,6 +19,16 @@ export default function Headerbar() {
     } 
   }
 
+  const Homesroll = () => {
+    const selectid = document.getElementById('Homeref')
+    if(selectid){
+      window.scrollTo({
+        behavior:'smooth',
+        top:selectid.offsetTop -  100,
+      })
+    } 
+  }
+
 
   function ClickEndress (){
     const location = 'https://www.google.com/maps?ll=-23.558353,-46.801738&z=15&t=m&hl=pt-BR&gl=BR&mapclient=embed&q=Av.+Santiago+Rodilha,+199+-+Veloso+Osasco+-+SP+06154-000'
@@ -31,19 +41,23 @@ export default function Headerbar() {
   }
 
   return (
+    <>
     <ContainerBar>
-      <GroupComponents>
-        <div>
-          <img src={Ctlogo} alt="" />
+      <div>
+         <div>
+          <img src={Ctlogo} alt="Logo" width={150} />
         </div>
+      </div>
+      <GroupComponents>
         <TitleHeader>
-            <span>Home</span>
+            <span onClick={Homesroll}>Home</span>
             <span onClick={Scroll}>Planos</span>
             <span onClick={ClickEndress}>Unidade</span>
           <button onClick={Registrationclick}>MATRICULAS ABERTAS</button>
             </TitleHeader>
       </GroupComponents>
-      <BarDivision/>
     </ContainerBar>
+    < BarDivision id='Homeref'/>
+    </>
   );
 }

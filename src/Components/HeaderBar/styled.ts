@@ -10,25 +10,33 @@ export const GroupComponents = styled.div`
     height:130px;
 ;
  }
+
 `;
 
 export const ContainerBar = styled.div`
+display: flex;
+align-items: center;
+justify-content: space-around;
  max-width: 100vw;
  height: 150px;
- padding: 05px;
+ padding: 5px;
  background-color: black ;
+
+ 
 
 @media (max-width: 450px){
     max-width: 450px;
 
+    img{
+        width:120px ;
+    }
 }
 `;
 
 export const TitleHeader = styled.div`
  display: flex;
  align-items: center;
- gap: 100px;
-
+gap: 80px;
  span{
     color: #ffff;
     font-size: 16px;
@@ -60,6 +68,11 @@ button:hover{
 span:hover{
     border-bottom: 1px solid red; 
     color: #FE3030;
+}
+
+@media(max-width: 450px){
+    
+    
 }
 `;
 

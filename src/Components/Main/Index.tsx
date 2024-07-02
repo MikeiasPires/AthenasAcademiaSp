@@ -14,6 +14,12 @@ export default function Mainpackage() {
 
 const productRef = useRef<HTMLDivElement | null >(null)
 
+function Productbuy () {
+  const linkregister = 'https://wa.me/message/JJSARAA2643YE1'
+  window.location.href = linkregister
+}
+
+
   return (
     <ContainerMain>
       <TitleInfo>
@@ -38,8 +44,8 @@ const productRef = useRef<HTMLDivElement | null >(null)
         </TitleProduct>
         <VallueProducts>
           <label >apenas: </label>
-          <button>
-            R$ 100 / MÊS
+          <button onClick={Productbuy}>
+        {prod.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} / MÊS
           </button>
         </VallueProducts>
         </div>

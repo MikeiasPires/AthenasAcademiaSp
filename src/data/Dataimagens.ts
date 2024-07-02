@@ -18,36 +18,36 @@ export const products: ProductInterface[] = [
         id: 1,
         images: Boxe, 
         title: 'Boxe',
-        description: '8 aulas por semana com grade aberta',
+        description: 'Segunda, Quarta, e Terça feira',
         duration: '1 hora de duração',
-        days: 'segunda e sexta',
-        price: 100
+        days: 'Apartir das 20:30H',
+        price: 120
     },
     {
         id: 2,
         images: Muaithay, 
         title: 'Muai thay',
-        description: '8 aulas por semana com grade aberta',
+        description: 'Todos os dias da semana',
         duration: '1 hora de duração',
-        days: 'segunda e sexta',
-        price: 100
+        days: 'Apartir das 15H',
+        price: 120
     },
     {
         id: 3,
         images: Boxekids, 
-        title: 'Boxe kids',
-        description: '8 aulas por semana com grade aberta',
+        title: ' Thay kids',
+        description: 'Aulas na Terça e  Quinta feira',
         duration: '1 hora de duração',
-        days: 'segunda e sexta',
-        price: 100
+        days: 'Apartir das 19:30H',
+        price: 90
     },
     {
         id: 4,
         images: Figthcircuit, 
         title: 'Figth circuit',
-        description: '8 aulas por semana com grade aberta',
+        description: 'Segunda, Quarta, e Terça feira',
         duration: '1 hora de duração',
-        days: 'segunda e sexta',
-        price: 100
+        days: 'Apartir das 16H',
+        price: 120
     }
 ];
